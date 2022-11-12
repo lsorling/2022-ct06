@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <!-- NAVBAR: the default navbar is difficult to style -->
+        <div style="height: 50px; display: flex;">
+            <div>
+                <a href="index.html"><img class="img-navbar-logo" src="favicon.ico" width="48"></a>
+                Joey Lin
+            </div>
+            <div style="flex: 1 0 auto;"></div>
+            <div style="float: right; padding-top: 8px;">
+                <a class="navbar-item" href="singapore.html">Singapore</a>&nbsp;
+                <a class="navbar-item" href="school.html">Friends</a>&nbsp;
+                <a class="navbar-item" href="round.html">About</a>
+            </div>
+        </div>
+        <!-- NAVBAR: end -->
+        <h1>About ME</h1>
+        <p>Click on the pictures below to learn more about me.</p>
+        <div class="parent2">
+            <div class="item2">
+                <a href="singapore.html">
+                    <img class="img-round" src="images/singapore.jpg" width="225vw" height="225vw">
+                </a>
+            </div>
+            <div class="item2">
+                <a href="vegetables.html">
+                    <img class="img-round" src="images/lovevegetables.jpg" width="225vw" height="225vw">
+                </a>
+            </div>
+            <div class="item2">
+                <a href="school.html">
+                    <img class="img-round" src="images/school.jpg" width="225vw" height="225vw">
+                </a>
+            </div>
+            <div class="item2">
+                <a href="singapore.html">
+                    <img class="img-round" src="images/loveplanes.jpg" width="225vw" height="225vw">
+                </a>
+            </div>
+        </div>
+        <p><br></p>
+        <h2>How did I do this?</h2>
+        <p>
+            This above is done with flexbox too. Once I set CSS property "flex-wrap" to "wrap",
+            if the window is resized to a smaller one, the row of 4 becomes row of 2, then 1
+            each for the smallest viewport. Try resizing the window now.
+            <br><br>
+            I learned how to make round images too. The CSS property "border-radius" with value at 50%,
+            can create such results. And not forgetting the img tag with CSS property "object-fit" must
+            be set to "cover".
+        </p>
+        <h2>Navigation Bar</h2>
+        <p>
+            Take a look at the navbar. There is one at the top of the page. Another one at the bottom
+            of the page.
+            <br><br>
+            Top navbar included a logo/brand that represented me, followed by my name. On the rightmost area, 
+            I have added quick links to jump to sections that I wanted to share with everyone.
+            For the anchor tags &lt;a&gt; in this area, I have edited the "text-decoration" to both "overline"
+            and "underline" whenever you hover over the keywords listed. The background color of the keyword
+            also changes to "orange", and revert whenever your mouse leave the area of the keyword displayed.
+            <br><br>
+            Bottom navbar follows a typical book, where you will flip page by page as you read.
+            The content flow from 1st page to the last. 
+            Find the first page and the last page in this navigation section. It will show the visitors
+            the endpoints of this book.
+            Try it and see how many pages I have in this website.
+            <br><br>
+            For the anchor tags &lt;a&gt; in this area, I have retain its original CSS properties.
+            
+        </p>
+        <div>
+            <span style="float: left;">
+                <img class="img-navbar-bottom" src="images/left-arrow.png" width="25px">
+                <a href="next.html">Previous Page</a>
+            </span>
+            <span style="float: right;">
+                <a href="singapore.html">Next Page</a>
+                <img class="img-navbar-bottom" src="images/right-arrow.png" width="25px">
+            </span>
+        </div>
+        <p><br></p>
+        <h5>*Images are from freepik.com</h5>
+    </main>
+    <footer class="footer">
+        All rights reserved. © Copyright 2022.
+    </footer>
+</body>
+
+</html>

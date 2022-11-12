@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <!-- NAVBAR: the default navbar is difficult to style -->
+        <div style="height: 50px; display: flex;">
+            <div>
+                <a href="#">
+                    <!-- 
+                        step 1: use inline style to experiment and test
+                        <img style="border: none; border-radius: 0; vertical-align: middle;" src="favicon.ico"
+                        width="48"> 
+
+                        step 2: move to external css
+                    -->
+                    <img class="img-navbar-logo" src="favicon.ico" width="48">
+                </a>
+                Joey Lin
+            </div>
+            <div style="flex: 1 0 auto;"></div>
+            <div style="float: right; padding-top: 8px;">
+                <a class="navbar-item" href="singapore.html">Singapore</a>&nbsp;
+                <a class="navbar-item" href="school.html">Friends</a>&nbsp;
+                <a class="navbar-item" href="round.html">About</a>
+            </div>
+        </div>
+        <!-- NAVBAR: end -->
+        <h1>😊 Hey, I am Joey 🙋‍♀️</h1>
+        <p>
+            I love to code. I am fascinated by web programming,
+            especially CSS which refers to Cascading Stylesheet. Using CSS, I can dress up
+            my webpages using colors and everything else that I can only imagine.
+            With HTML, I can add photos and videos to enrich my contents. So awesome!
+            <br><br>
+            Nice to meet you! ✌️
+            <br><br>
+            In this website, I will add in snipplets to share the techniques that I have
+            learned. Please check back regularly for more updates!
+        </p>
+
+        <div class="parent">
+            <div class="item0 bg-blue"></div>
+            <div class="item bg-white"></div>
+            <div class="item bg-red"></div>
+            <div class="item0 bg-yellow"></div>
+        </div>
+        <br><br>
+        <h2>Piet Mondrian</h2>
+        <p>
+            One day I was out shopping and I was attracted to this marketing poster of a hair salon using color
+            blocking.
+            I was curious about it, and I went back and start researching. It didn't take me long to find this guy
+            named "Piet Mondrian".
+        </p>
+        <h3>Color Blocking</h3>
+        <p>
+            Color blocking has been around for around 10 decades. Piet Mondrian was the first artist to really
+            popularize the idea of color blocking.
+            Piet Mondrian introduced color blocking in the 1930's by creating works using vibrant colors separated by
+            thick black lines making squares of different colors, most commonly, blue, red, yellow, the primary colors;
+            and white, and black. This new vision for modern art had profound effects on the artistic world, as well as,
+            the
+            fashion world.
+        </p>
+        <h3>Color Theory</h3>
+        <p>
+            This is an important aspect when it comes to web programming. I am still learning how to get it right.
+            Do you like the colors that I have chosen for my Portfolio? How many colors did I use?
+        </p>
+        <div>
+            <!--
+                KISS - keep it simple strategy
+                for simple styling
+                float: left, float: right is easy to use
+                for complex one like top navbar, use flexbox
+            -->
+            <!-- <span style="float: left;">Previous Page</span> -->
+            <span style="float: right;">
+                <a href="next.html">Next Page</a>
+                <!--
+                    start with inline styles first
+                    experiment and test
+                    till everything works - move to style.css (external css)
+                <img style="border: none; vertical-align: text-bottom;" src="images/right-arrow.png" width="25px">
+                -->
+                <img class="img-navbar-bottom" src="images/right-arrow.png" width="25px">
+            </span>
+        </div>
+        <p><br></p>
+    </main>
+    <footer class="footer">
+        All rights reserved. © Copyright 2022.
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+body {
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+    background-color: #ccc;
+    font-size: 125%;
+}
+p {
+    padding: 30px;
+}
+.parent {
+    border: 16px solid black;
+    border-top: 32px solid black;
+    border-bottom: 32px solid black;
+    border-radius: 20px;
+    width: 75%;
+    height: 400px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    /* gap: 8px; */
+    -webkit-box-shadow: 10px 10px 5px 0px gray;
+    -moz-box-shadow: 10px 10px 5px 0px gray;
+    box-shadow: 10px 10px 5px 0px gray;
+    background-color: black;
+}
+.item0 {
+    flex: 1 auto;
+    width: 10%;
+    height: 100%;
+    border: 16px solid black;
+    border-radius: 25px;
+}
+.item {
+    flex: auto;
+    height: 100%;
+    border: 16px solid black;
+    border-radius: 25px;
+}
+.bg-blue {
+    background-color: blue;
+}
+.bg-red {
+    background-color: red;
+}
+.bg-yellow {
+    background-color: yellow;
+}
+.bg-white {
+    background-color: white;
+}
+img {
+    object-fit: cover;
+    border-radius: 35px;
+    border: 1vw solid orange;
+}
+.parent2 {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+.item2 {
+    flex: 0 1 auto;
+}
+
+.img-round {
+    border-radius: 50%;
+    border: 1vw solid olive;
+}
+
+
+.img-small {
+    object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+}
+
+.parent3 {
+    display: flex;
+    border: 2px solid gray;
+    padding: 4px;
+    background-color: gainsboro;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 5px 0px gray;
+    -moz-box-shadow: 10px 10px 5px 0px gray;
+    box-shadow: 10px 10px 5px 0px gray;
+}
+.content {
+    flex: auto;
+    padding: 8px;
+    /* border: 2px solid orangered; */
+    text-align: left;
+}
+.img-anchor {
+    flex: 0 auto;
+}
+.tall {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 75%;
+    margin: auto;
+    justify-content: center;
+}
+/* 
+    stage N-1: navbar at the top with brand logo, and quick links to pages
+*/
+.navbar-item {
+    text-decoration: none;
+    color: black
+}
+.navbar-item:hover {
+    background-color: gold;
+    text-decoration: overline underline;
+}
+.img-navbar-logo {
+    border: none; 
+    border-radius: 0; 
+    vertical-align: middle;
+}
+/* 
+    stage N: add images for navigation at bottom for previous and next pages
+*/
+.img-navbar-bottom {
+    border: none; 
+    vertical-align: text-bottom;
+}
+/*
+    stage N+1: fix the footer section 
+*/
+.footer {
+    background-color: white; padding: 16px;
+}
+/*
+    stage ABC: responsive web design to cater to different screen sizes
+*/
+.container {
+    margin: auto;
+}
+
+@media (min-width: 480px) {
+    .container {
+        width: 400px;
+    }
+}
+@media (min-width: 720px) {
+    .container {
+        width: 680px;
+    }
+}
+@media (min-width: 1080px) {
+    .container {
+        width: 960px;
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+        width: 1200px;
+    }
+}
